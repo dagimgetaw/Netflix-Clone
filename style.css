@@ -11,6 +11,8 @@
 .nav {
   display: flex;
   /* position: relative; */
+  height: 632.35px;
+  overflow: hidden;
 }
 .nav-logo {
   margin: 2rem;
@@ -59,7 +61,9 @@
   font-size: 1.5em;
 }
 .home-form {
-  margin: 29rem auto;
+  margin: 30rem 23rem;
+  z-index: 1;
+  position: absolute;
 }
 input::placeholder {
   color: var(--clr-white);
@@ -75,7 +79,32 @@ input::placeholder {
   background-color: var(--clr-btn);
   color: var(--clr-white);
   border-radius: 0.5rem;
-
   padding: 0.8rem 3rem;
   font-size: 1.4em;
+}
+.line {
+}
+.home-2 {
+  background-color: black;
+}
+.home-2 h1,
+.home-2 p {
+  color: var(--clr-white);
+}
+.home-2-container {
+  display: flex;
+}
+.home-2-left {
+  display: block;
+}
+.home-2-left h1 {
+  padding-top: 16rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-family: var(--font);
+  font-size: 3em;
+}
+.home-2-left p {
+  padding-left: 2rem;
+  font-size: 1.2em;
 }
