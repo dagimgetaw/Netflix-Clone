@@ -1,0 +1,81 @@
+:root {
+  --clr-btn: rgb(229, 9, 20);
+  --clr-white: #fff;
+  --font: "Lato", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.nav {
+  display: flex;
+  /* position: relative; */
+}
+.nav-logo {
+  margin: 2rem;
+  position: absolute;
+  z-index: 1;
+  object-fit: fill;
+}
+.nav-btn {
+  margin: 2rem;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--clr-btn);
+  color: var(--clr-white);
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 0;
+  border: 1px none var(--clr-btn);
+}
+.banner {
+  position: absolute;
+  object-fit: fill;
+  z-index: -1;
+  width: 100%;
+  filter: brightness(40%);
+}
+.nav h1,
+.home-para1,
+.home-para2 {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  color: var(--clr-white);
+  width: 100%;
+  font-family: var(--font);
+}
+.nav h1 {
+  margin-top: 18rem;
+  font-size: 3em;
+  font-weight: bolder;
+}
+.home-para1 {
+  margin-top: 23rem;
+  font-size: 1.5em;
+}
+.home-para2 {
+  margin-top: 26rem;
+  font-size: 1.5em;
+}
+.home-form {
+  margin: 29rem auto;
+}
+input::placeholder {
+  color: var(--clr-white);
+  text-align: left;
+}
+.home-input {
+  padding: 1rem 6rem;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.home-btn {
+  border: 1px none var(--clr-btn);
+  background-color: var(--clr-btn);
+  color: var(--clr-white);
+  border-radius: 0.5rem;
+
+  padding: 0.8rem 3rem;
+  font-size: 1.4em;
+}
